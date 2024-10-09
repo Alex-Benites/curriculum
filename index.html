@@ -1,52 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="desarrollador web, Python, Django,
-    React, JavaScript, backend, frontend, programación, desarrollo de
-    software, ingeniero de software">
-    <meta name="description" content="Desarrollador web full-stack con 5
-    años de experiencia en la creación de aplicaciones web escalables.
-    Experto en Python, Django y React. Busco un puesto desafiante en una
-    empresa innovadora.">
+    <meta name="keywords" content="desarrollador web, Python, Django, React, JavaScript, backend, frontend, programación, desarrollo de software, ingeniero de software">
+    <meta name="description" content="Desarrollador web full-stack con 5 años de experiencia en la creación de aplicaciones web escalables. Experto en Python, Django y React. Busco un puesto desafiante en una empresa innovadora.">
     <meta name="author" content="Juan Pérez">
     <link rel="stylesheet" href="style.css">
     <title>Curriculum Vitae</title>
 </head>
 <body>
-    <h1>Recuerda mi nombre !Alex Benites!</h1>
-    
-    <nav>
-        <ul>
-            <li><a href="#perfil">Perfil</a></li>
-            <li><a href="#experiencia">Experiencia</a></li>
-            <li><a href="#educacion">Educación</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
-
-     <main>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#perfil">Perfil</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#educacion">Educación</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#multimedia">Multimedia</a></li>
+                <li><a href="#formulario">Formulario</a></li>
+            </ul>
+        </nav>
+        <img src="https://placehold.co/150x150" alt="Imagen de perfil de Alex Benites" />
+        <h1>¡Recuerda mi nombre! Alex Benites</h1>
         
+    </header>
+    
+
+    <main>
         <section id="perfil">
             <h2>Perfil</h2>
-            <p>Estudiante de Ingenieria en Computacion desde el 2022. Desarrollador de aplicaciones web y mobiles</p>
+            <p>Estudiante de Ingeniería en Computación desde el 2022. Desarrollador de aplicaciones web y móviles.</p>
         </section>
 
         <section id="experiencia">
             <h2>Experiencia Laboral</h2>
             <ul>
                 <li><strong>Mesero a tiempo parcial</strong> (2020 - Presente)</li>
-                <li><strong>Ayudante de preparacion fisica</strong> (2017 - 2020)</li>
+                <li><strong>Ayudante de preparación física</strong> (2017 - 2020)</li>
             </ul>
         </section>
 
         <section id="educacion">
             <h2>Educación</h2>
             <ul>
-                <li><strong>Ingeniería en Computacion</strong> - Universidad "Escuela Superior Politecnica del Litoral" (2022 - Presente)</li>
-                <li><strong>Conductor Licencia Profesional "Tipo C"</strong> - Instituto Tecnico Bolivariano (2021 - 2022)</li>
+                <li><strong>Ingeniería en Computación</strong> - Universidad "Escuela Superior Politécnica del Litoral" (2022 - Presente)</li>
+                <li><strong>Conductor Licencia Profesional "Tipo C"</strong> - Instituto Técnico Bolivariano (2021 - 2022)</li>
             </ul>
         </section>
 
@@ -59,6 +59,54 @@
             </ul>
         </section>
 
+        <section id="multimedia">
+            <h2>Multimedia</h2>
+
+            <h3>Video de presentación</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Vb-yIbzw2h4" title="Video de presentación" frameborder="0" allowfullscreen></iframe>
+
+            <h3>Mapa de ubicación</h3>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509267!2d144.9537354153162!3d-37.816279979751205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11cf81%3A0x5045675218ceed30!2sGoogle!5e0!3m2!1ses!2ses!4v1630580491863!5m2!1ses!2ses" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <section id="formulario">
+            <h2>Formulario de Contacto</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <label for="servicio">Selecciona un servicio:</label>
+                <select id="servicio" name="servicio">
+                    <option value="desarrollo-web">Desarrollo Web</option>
+                    <option value="diseno-grafico">Diseño Gráfico</option>
+                    <option value="consultoria">Consultoría</option>
+                </select>
+
+                <fieldset>
+                    <legend>¿Cómo te enteraste de nosotros?</legend>
+                    <label>
+                        <input type="radio" name="fuente" value="internet"> Internet
+                    </label>
+                    <label>
+                        <input type="radio" name="fuente" value="recomendacion"> Recomendación
+                    </label>
+                    <label>
+                        <input type="radio" name="fuente" value="publicidad"> Publicidad
+                    </label>
+                </fieldset>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
         <section id="contacto">
             <h2>Contacto</h2>
             <p>Email: benitesseguraa@gmail.com</p>
@@ -66,13 +114,11 @@
         </section>
     </main>
 
-    <!-- Pie de página -->
     <footer>
         <p>&copy; 2024 Alex Benites. Todos los derechos reservados.</p>
         <ul>
-            <li><a
-            href="https://www.linkedin.com/in/alexbenites">LinkedIn</a></li>
-            <li><ahref="https://github.com/tunombre">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/alexbenites">LinkedIn</a></li>
+            <li><a href="https://github.com/tunombre">GitHub</a></li>
         </ul>
     </footer>
 </body>
