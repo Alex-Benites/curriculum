@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="desarrollador web, Python, Django, React, JavaScript, backend, frontend, programación, desarrollo de software, ingeniero de software">
-    <meta name="description" content="Desarrollador web full-stack con 5 años de experiencia en la creación de aplicaciones web escalables. Experto en Python, Django y React. Busco un puesto desafiante en una empresa innovadora.">
-    <meta name="author" content="Juan Pérez">
+    <meta name="description" content="Desarrollador de prototipos en figma con 1 año de experiencia en la creación de aplicaciones web y moviles. Busco un puesto desafiante en una empresa innovadora.">
+    <meta name="author" content="Alex Benites">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
     <title>Curriculum Vitae</title>
 </head>
@@ -22,28 +24,30 @@
                 <li><a href="#formulario">Formulario</a></li>
             </ul>
         </nav>
-        <img src="https://placehold.co/150x150" alt="Imagen de perfil de Alex Benites" />
-        <h1>¡Recuerda mi nombre! Alex Benites</h1>
         
     </header>
-    
+    <img id = "photo" src="https://placehold.co/600x400" alt="photo" />
+        <h1>¡Recuerda mi nombre! Alex Benites</h1>
+
+
 
     <main>
         <section id="perfil">
-            <h2>Perfil</h2>
+            <h2 class="subtitle">Perfil</h2>
             <p>Estudiante de Ingeniería en Computación desde el 2022. Desarrollador de aplicaciones web y móviles.</p>
         </section>
 
         <section id="experiencia">
-            <h2>Experiencia Laboral</h2>
+            <h2 class="subtitle">Experiencia Laboral</h2>
             <ul>
                 <li><strong>Mesero a tiempo parcial</strong> (2020 - Presente)</li>
                 <li><strong>Ayudante de preparación física</strong> (2017 - 2020)</li>
             </ul>
+            <img id = "photo2" src="https://placehold.co/300x150" alt="photo" />
         </section>
 
         <section id="educacion">
-            <h2>Educación</h2>
+            <h2 class="subtitle">Educación</h2>
             <ul>
                 <li><strong>Ingeniería en Computación</strong> - Universidad "Escuela Superior Politécnica del Litoral" (2022 - Presente)</li>
                 <li><strong>Conductor Licencia Profesional "Tipo C"</strong> - Instituto Técnico Bolivariano (2021 - 2022)</li>
@@ -51,66 +55,63 @@
         </section>
 
         <section id="habilidades">
-            <h2>Habilidades</h2>
+            <h2 class="subtitle">Habilidades</h2>
             <ul>
-                <li>Lenguajes: Python, JavaScript, HTML, CSS</li>
-                <li>Frameworks: Django, React</li>
-                <li>Desarrollo Frontend y Backend</li>
+                <li>Lenguajes: Python, HTML, CSS, Java, SQL</li>
+                <li>Frameworks: Bootsrtap, React, Twiland</li>
+                <li>Desarrollador de prototipos en Figma</li>
             </ul>
         </section>
 
         <section id="multimedia">
-            <h2>Multimedia</h2>
-
-            <h3>Video de presentación</h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Vb-yIbzw2h4" title="Video de presentación" frameborder="0" allowfullscreen></iframe>
-
-            <h3>Mapa de ubicación</h3>
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509267!2d144.9537354153162!3d-37.816279979751205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11cf81%3A0x5045675218ceed30!2sGoogle!5e0!3m2!1ses!2ses!4v1630580491863!5m2!1ses!2ses" 
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </section>
-
-        <section id="formulario">
-            <h2>Formulario de Contacto</h2>
-            <form action="#" method="post">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-
-                <label for="servicio">Selecciona un servicio:</label>
-                <select id="servicio" name="servicio">
-                    <option value="desarrollo-web">Desarrollo Web</option>
-                    <option value="diseno-grafico">Diseño Gráfico</option>
-                    <option value="consultoria">Consultoría</option>
-                </select>
-
-                <fieldset>
-                    <legend>¿Cómo te enteraste de nosotros?</legend>
-                    <label>
-                        <input type="radio" name="fuente" value="internet"> Internet
-                    </label>
-                    <label>
-                        <input type="radio" name="fuente" value="recomendacion"> Recomendación
-                    </label>
-                    <label>
-                        <input type="radio" name="fuente" value="publicidad"> Publicidad
-                    </label>
-                </fieldset>
-
-                <button type="submit">Enviar</button>
-            </form>
+            <h2 class="subtitle">Contactanos!</h2>
+        
+            <div id="form-map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9482.217039146766!2d-79.92013901453561!3d-2.2357466861813773!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d70278e36c8bf%3A0x3f7650c668bc7e1a!2sJaher!5e0!3m2!1ses!2sec!4v1728500695722!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+                <section id="formulario">
+                    <h2 class="subtitle">Formulario de Contacto</h2>
+                    <form action="#" method="post">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+        
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        
+                        <label for="servicio">Selecciona un servicio:</label>
+                        <select id="servicio" name="servicio">
+                            <option value="desarrollo-web">Desarrollo Web</option>
+                            <option value="diseno-grafico">Diseño Gráfico</option>
+                            <option value="consultoria">Consultoría</option>
+                        </select>
+        
+                        <fieldset>
+                            <legend>¿Cómo te enteraste de nosotros?</legend>
+                            <label>
+                                <input type="radio" name="fuente" value="internet"> Internet
+                            </label>
+                            <label>
+                                <input type="radio" name="fuente" value="recomendacion"> Recomendación
+                            </label>
+                            <label>
+                                <input type="radio" name="fuente" value="publicidad"> Publicidad
+                            </label>
+                        </fieldset>
+        
+                        <button type="submit">Enviar</button>
+                    </form>
+                </section>
+            </div>
         </section>
 
         <section id="contacto">
-            <h2>Contacto</h2>
+            <h2 class="subtitle">Contacto</h2>
             <p>Email: benitesseguraa@gmail.com</p>
             <p>Teléfono: +593 0998394998</p>
+            
         </section>
     </main>
 
