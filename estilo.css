@@ -25,17 +25,17 @@ html{
     max-width: 1100px;
     margin: auto;
     display: flex;
-    justify-content: space-between; /* Asegura que los elementos estén a los extremos */
+    justify-content: space-between; 
     align-items: center;
     padding: 15px 20px;
 }
 .ContenerdorMenu .logo {
     text-align: left;
-    flex: 1; /* Permite que la .logo ocupe el espacio disponible a la izquierda */
+    flex: 1; 
 }
 .ContenerdorMenu nav {
     flex: 1;
-    text-align: right; /* Alinea el menú de navegación a la derecha */
+    text-align: right; 
 }
 .ContenerdorMenu header .logo a{
     font-family: 'Righteous';
@@ -46,12 +46,12 @@ html{
 .ContenerdorMenu header ul {
     display: flex;
     list-style: none;
-    justify-content: flex-end; /* Coloca las opciones al final (derecha) */
+    justify-content: flex-end; 
     padding: 0;
     margin: 0;
 }
 .ContenerdorMenu header nav ul li {
-    margin-left: 15px; /* Añade espacio entre los elementos */
+    margin-left: 15px;
 }
 .ContenerdorMenu header nav ul li a {
     color: #fff;
@@ -151,11 +151,11 @@ html{
 }
 .infoPersonal .fila {
     display: flex;
-    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
-    justify-content: space-between; /* Espacio uniforme entre elementos */
+    flex-wrap: wrap; 
+    justify-content: space-between; 
 }
 .infoPersonal .fila .col {
-    width: calc(33.33% - 5px); /* Ancho de 3 columnas con espacio entre ellas */
+    width: calc(33.33% - 5px);
     box-sizing: border-box; 
 }
 .infoPersonal .fila .col h3{
@@ -235,12 +235,6 @@ html{
 }
 
 /*------------------------------------------- Seccion Habilidades ---------------------------------------*/
-/*
-infoPersonal en lugar de sobre mi
-contenidoIntereses lo cambio por 
-contenedorSeccion en lugra de contenido-seccion
-contenidoInicio en lugra de contenido-banner
-*/
 .skills{
     background-color: #ffffff;
     color: #1CB698;
@@ -302,7 +296,7 @@ contenidoInicio en lugra de contenido-banner
     font-size: 14px;
     color: #ffffff;
 }
-/* Estas clases se agregaran dinamicamente mediante javascript */
+/* uso de clases con javasript para efecto de porcentajes en habilidades tecnicas y profesionales */
 .skills .skill .javascript{
     width: 0%;
     animation: 2s javascript forwards;
@@ -505,45 +499,6 @@ contenidoInicio en lugra de contenido-banner
     bottom: 4px;
 }
 /*------------------------------------------SECCION PORTFOLIO-------------------------------------- */
-
-/* ---------------------------------------- codigo unooo --------------------------------------*/
-
-/*.portfolio {
-    background-color: #ffffff;
-    color: #1CB698;
-    padding: 50px 20px;
-    border-top: 3px solid #000000;
-}
-
-.portfolio .galeria {
-    display: flex;
-    width: 80%;
-    height: 600px;
-    
-}
-
-.portfolio .proyecto img  {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: .5s ease;
-}
-
-
-.portfolio .proyecto img:hover {
-    filter: contrast(120%);
-    width: 300px;
-    opacity: 1;
-}
-
-.portfolio .proyecto:hover .overlay {
-    opacity: 1;
-}
-*/
-
-
-/*------------------------------------------  codigo dossss ---------------------------------------*/
-
 .portfolio {
     background-color: #ffffff;
     color: #1CB698;
@@ -552,10 +507,10 @@ contenidoInicio en lugra de contenido-banner
     text-align: center;
 }
 .portfolio h2 {
-    font-size: 48px; /* Tamaño del texto más grande */
-    font-family: 'Righteous', sans-serif; /* Asegúrate de usar la fuente que prefieras */
-    margin: 0 auto; /* Centrar el margen si es necesario */
-    color: #1CB698; /* Mantén el color deseado */
+    font-size: 48px;
+    font-family: 'Righteous', sans-serif; 
+    margin: 0 auto;
+    color: #1CB698;
 }
 
 .portfolio .galeria {
@@ -566,8 +521,10 @@ contenidoInicio en lugra de contenido-banner
 }
 
 .portfolio .proyecto img {
+    
+    padding-top: 30px;
     width: 100%;
-    height: 100%;
+    height: 90%;
     object-fit: cover;
     transition: 0.5s ease;
 }
@@ -592,6 +549,26 @@ contenidoInicio en lugra de contenido-banner
     align-items: center;
     opacity: 0;
     transition: opacity 0.5s ease;
+}
+.portfolio .galeria .ImageProject {
+    font-size: 120%;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.portfolio .galeria .ImageProject a {
+    color: #1CB698; 
+    text-decoration: none; 
+    padding: 10px 20px; 
+    border: 2px solid transparent; 
+    transition: all 0.3s ease; 
+}
+
+.portfolio .galeria .ImageProject a:hover {
+    border-color: #1CB698; 
+    background-color: rgba(0, 0, 0, 0.1); 
+    border-radius: 5px; 
 }
 
 .portfolio .proyecto:hover .overlay {
@@ -630,7 +607,7 @@ contenidoInicio en lugra de contenido-banner
     border: none;
     margin-bottom: 20px;
     background-color: #ffffff;
-    color: #fff;
+    color: #000000;
     font-size: 18px;
 }
 .contacto button{
@@ -720,7 +697,7 @@ footer .arriba{
     line-height: 50px;
     font-size: 18px;
 }
-/* SECCION RESPONSIVE */
+/*------------------------------------ Seccion para hacer la aplicacion Responsive --------------------------------------*/
 @media screen and (max-width:980px){
     nav{
         display: none;
