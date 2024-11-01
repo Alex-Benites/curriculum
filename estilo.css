@@ -78,6 +78,7 @@ html{
     color: #fff;
     display: flex;
     align-items: center;
+    margin-top: 20px;
 }
 .inicio .contenidoInicio{
     padding: 20px;
@@ -659,6 +660,37 @@ html{
     display: inline-block;
     margin-right: 20px;
 }
+
+/*----------------------------- Descubrimientos -----------------------------------*/
+.descubrimiento {
+    background-color: #ffffff;
+    color: #1CB698;
+    padding: 50px 20px;
+    text-align: center;
+    border-bottom: 3px solid black;
+}
+.descubrimiento h2 {
+    font-size: 48px;
+    font-family: 'Righteous', sans-serif; 
+    margin: 0 auto;
+    color: #1CB698;
+}
+
+.descubrimiento .videos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+}
+
+.descubrimiento iframe {
+    max-width: 100%;
+    border: none;
+}
+
+
+/*------------------------------ Footer ----------------------------------*/
 footer{
     background-color: #ffffff;
     color: #000000;
@@ -766,5 +798,3 @@ footer .arriba{
         width: 100%;
     }
 }
-
-/*ContenerdorMenu*/

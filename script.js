@@ -1,6 +1,5 @@
 let menuVisible = false;
 
-// Función para limpiar los campos del formulario
 function limpiarFormulario() {
     document.getElementById("nombre").value = '';
     document.getElementById("telefono").value = '';
@@ -9,7 +8,6 @@ function limpiarFormulario() {
     document.getElementById("mensaje").value = '';
 }
 
-//Función que oculta o muestra el menu
 function mostrarOcultarMenu(){
     if(menuVisible){
         document.getElementById("nav").classList ="";
@@ -21,11 +19,10 @@ function mostrarOcultarMenu(){
 }
 
 function seleccionar(){
-    //oculto el menu una vez que selecciono una opcion
     document.getElementById("nav").classList = "";
     menuVisible = false;
 }
-//Funcion que aplica las animaciones de las habilidades
+
 function efectoHabilidades(){
     var skills = document.getElementById("skills");
     var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
@@ -44,8 +41,6 @@ function efectoHabilidades(){
     }
 }
 
-
-//detecto el scrolling para aplicar la animacion de la barra de habilidades
 window.onscroll = function(){
     efectoHabilidades();
 } 
